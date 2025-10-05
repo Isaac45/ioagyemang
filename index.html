@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Academic Profile</title>
+  <!-- <script>
+    // Tailwind CDN config must be set on tailwind.config (not window.tailwind)
+    tailwind = window.tailwind || {};
+    tailwind.config = { darkMode: 'class' };
+  </script> -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+  <script src="https://unpkg.com/feather-icons"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    .hero-gradient { background: linear-gradient(135deg, #0f5132 0%, #198754 100%); }
+    .nav-link:hover { color: #16a34a; }
+    .card-hover:hover { transform: translateY(-5px); box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1), 0 10px 10px -5px rgba(0,0,0,0.04); }
+  </style>
+</head>
+<body class="font-sans antialiased text-gray-800 dark:text-gray-100 dark:bg-gray-900">
+  <nav class="bg-white/90 dark:bg-gray-900/80 backdrop-blur shadow-sm sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between h-16">
+        <div class="flex items-center gap-3">
+          <span class="text-xl font-semibold text-green-600 dark:text-green-400">Academic Profile</span>
+          <!-- <span class="hidden sm:inline text-xs px-2 py-0.5 rounded-full bg-green-100 text-green-700 dark:bg-green-900/40 dark:text-green-300">Green theme</span> -->
+        </div>
+        <div class="hidden md:flex items-center space-x-6">
+          <a href="index.html" class="nav-link text-gray-700 hover:text-green-600 font-medium dark:text-gray-200">Home</a>
+          <a href="publications.html" class="nav-link text-gray-700 hover:text-green-600 font-medium dark:text-gray-200">Publications</a>
+          <a href="teaching.html" class="nav-link text-gray-700 hover:text-green-600 font-medium dark:text-gray-200">Teaching</a>
+          <a href="services.html" class="nav-link text-gray-700 hover:text-green-600 font-medium dark:text-gray-200">Services</a>
+          <!-- <a href="projects.html" class="nav-link text-gray-700 hover:text-green-600 font-medium dark:text-gray-200">Projects</a> -->
+          <a href="research-team.html" class="nav-link text-gray-700 hover:text-green-600 font-medium dark:text-gray-200">Research Team</a>
+          <a href="collaborators.html" class="nav-link text-gray-700 hover:text-green-600 font-medium dark:text-gray-200">Collaborators</a>
+        </div>
+        <div class="flex items-center gap-3">
+          <!-- <button id="themeToggle" class="hidden md:inline-flex items-center gap-2 px-3 py-1.5 rounded-md border border-gray-200 text-sm bg-white hover:bg-gray-50 dark:bg-gray-800 dark:hover:bg-gray-700 dark:border-gray-700">
+            <i data-feather="moon" class="h-4 w-4"></i><span class="sr-only">Toggle dark mode</span>
+          </button> -->
+          <button class="mobile-menu-button md:hidden p-2 rounded-md border border-gray-200 dark:border-gray-700">
+            <i data-feather="menu"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="mobile-menu hidden md:hidden bg-white dark:bg-gray-900 border-t border-gray-100 dark:border-gray-800">
+      <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+        <a href="index.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-green-600 hover:bg-gray-50 dark:text-gray-200 dark:hover:bg-gray-800">Home</a>
+        <a href="publications.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-green-600 hover:bg-gray-50 dark:text-gray-200 dark:hover:bg-gray-800">Publications</a>
+        <a href="teaching.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-green-600 hover:bg-gray-50 dark:text-gray-200 dark:hover:bg-gray-800">Teaching</a>
+        <a href="services.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-green-600 hover:bg-gray-50 dark:text-gray-200 dark:hover:bg-gray-800">Services</a>
+        <!-- <a href="projects.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-green-600 hover:bg-gray-50 dark:text-gray-200 dark:hover:bg-gray-800">Projects</a> -->
+        <a href="research-team.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-green-600 hover:bg-gray-50 dark:text-gray-200 dark:hover:bg-gray-800">Research Team</a>
+        <a href="collaborators.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-green-600 hover:bg-gray-50 dark:text-gray-200 dark:hover:bg-gray-800">Collaborators</a>
+        <!-- <button id="themeToggleMobile" class="mt-2 w-full inline-flex items-center justify-center gap-2 px-3 py-2 rounded-md border text-sm bg:white hover:bg-gray-50 border-gray-200 dark:bg-gray-800 dark:hover:bg-gray-700 dark:border-gray-700">
+          <i data-feather="moon" class="h-4 w-4"></i> Toggle dark mode
+        </button> -->
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero-gradient text-white">
+    <div class="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
+      <div class="text-center" data-aos="fade-up">
+        <img src="images/Ike2.jpg" alt="Profile" class="mx-auto h-44 w-34 rounded-full border-4 border-white shadow-lg">
+        <h1 class="mt-6 text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl">Dr. Isaac Osei Agyemang</h1>
+        <p class="mt-6 max-w-lg mx-auto text-xl">Computer Scientist | Lecturer & Research Associate | Author</p>
+        <div class="mt-8 flex justify-center space-x-4">
+          <a href="docs/CV.pdf" class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-green-700 bg-white hover:bg-gray-700">
+            <i data-feather="download" class="mr-2"></i> Download CV
+          </a>
+          <a href="mailto:ioa2@stir.ac.uk" class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-green-700 bg-white hover:bg-gray-700">
+            <i data-feather="mail" class="mr-2"></i> Contact Me
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="py-12 bg-white dark:bg-gray-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="lg:text-center" data-aos="fade-up">
+        <h2 class="text-base text-green-600 font-semibold tracking-wide uppercase dark:text-green-400">About</h2>
+        <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl dark:text-white">Professional Overview</p>
+      </div>
+      <div class="mt-10" data-aos="fade-up" data-aos-delay="100">
+        <div class="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10">
+          <div class="relative">
+            <div class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-green-600 text-white"><i data-feather="user"></i></div>
+            <p class="ml-16 text-lg leading-6 font-medium text-gray-900 dark:text-white">Biography</p>
+            <p class="mt-2 ml-16 text-base text-gray-600 dark:text-gray-300 text-justify leading-relaxed">
+              Dr. Isaac Osei Agyemang is a computer scientist and researcher whose work sits at the intersection of deep learning, computer vision, and structural health monitoring (SHM). He currently serves as an Associate Researcher and Lecturer at Stirling College, Chengdu University–University of Stirling Joint College (China), where he teaches and mentors undergraduate students in data science and AI-driven engineering applications.
+              Dr. Agyemang earned his Ph.D. in Information and Communication Engineering and Master of Engineering in Computer Science and Technology, both degrees from the University of Electronic Science and Technology of China (UESTC). His Bachelor of Science is in Computer Science from the Christian Service University College in Ghana. Dr. Agyemang's research domains are structural health monitoring, deep learning, computer vision, micro-drones, and medical imaging.
+              He has authored and co-authored several peer-reviewed papers in top-tier journals, including Automation in Construction, Engineering Applications of Artificial Intelligence, and Measurement.
+            </p>
+          </div>
+          <div class="relative">
+            <div class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-green-600 text-white"><i data-feather="award"></i></div>
+            <p class="ml-16 text-lg leading-6 font-medium text-gray-900 dark:text-white">Research Interests</p>
+            <p class="mt-2 ml-16 text-base text-gray-600 dark:text-gray-300 text-justify leading-relaxed">Main researach interest : </p>
+            <ul class="list-disc list-inside ml-6 mt-2">
+              <li>Structural Health Monitoring</li>
+              <li>Deep Learning</li>
+              <li>Computer Vision</li>
+              <li>Micro Robotics</li>
+              <li> Medical Imaging</li>
+            </ul>
+            <br/>
+
+            <p class="mt-4"> My secondary research interest are the application of Machine Learning, and Natural Language Processing in domains such as : </p>
+            <ul class="list-disc list-inside ml-6 mt-2">
+              <li>Healthcare</li>
+              <li>Finance</li>
+              <li>Education</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-12 bg-gray-50 dark:bg-gray-950">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="lg:text-center" data-aos="fade-up">
+        <h2 class="text-base text-green-600 font-semibold tracking-wide uppercase dark:text-green-400">Highlights</h2>
+        <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl dark:text-white">Recent Achievements</p>
+      </div>
+      <div class="mt-10 grid gap-10 lg:grid-cols-3">
+        <div class="bg-white dark:bg-gray-900 p-6 rounded-lg shadow-md transition duration-300 card-hover border border-gray-100 dark:border-gray-800" data-aos="fade-up" data-aos-delay="100">
+          <div class="flex items-center justify-center h-12 w-12 rounded-md bg-green-600 text-white"><i data-feather="book"></i></div>
+          <h3 class="mt-4 text-lg font-medium text-gray-900 dark:text-white">New Publication</h3>
+          <p class="mt-2 text-base text-gray-600 dark:text-gray-300 text-justify leading-relaxed">Published an interesting finding on leveraging hierarchical information of data towards defect assessment in Elsevier Measurement.</p>
+        </div>
+        <div class="bg-white dark:bg-gray-900 p-6 rounded-lg shadow-md transition duration-300 card-hover border border-gray-100 dark:border-gray-800" data-aos="fade-up" data-aos-delay="200">
+          <div class="flex items-center justify-center h-12 w-12 rounded-md bg-green-600 text-white"><i data-feather="award"></i></div>
+          <h3 class="mt-4 text-lg font-medium text-gray-900 dark:text-white">Award Received</h3>
+          <p class="mt-2 text-base text-gray-600 dark:text-gray-300 text-justify leading-relaxed">Sichuan High-level Foreign Talent Recognition 2024 - 2029.</p>
+        </div>
+        <div class="bg-white dark:bg-gray-900 p-6 rounded-lg shadow-md transition duration-300 card-hover border border-gray-100 dark:border-gray-800" data-aos="fade-up" data-aos-delay="300">
+          <div class="flex items-center justify-center h-12 w-12 rounded-md bg-green-600 text-white"><i data-feather="dollar-sign"></i></div>
+          <h3 class="mt-4 text-lg font-medium text-gray-900 dark:text-white">Grant Awarded</h3>
+          <p class="mt-2 text-base text-gray-600 dark:text-gray-300 text-justify leading-relaxed">Recipient of Post-Doc. grant for research on micro-drone-based and multimodal deep learning frameworks for automated damage detection and diagnosis.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-gray-800 text-white py-12 dark:bg-black">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+        <div>
+          <h3 class="text-sm font-semibold text-gray-300 tracking-wider uppercase">Contact</h3>
+          <div class="mt-4 space-y-4 text-gray-300">
+            <p class="flex items-center"><i data-feather="mail" class="mr-2"></i> ioa2@stir.ac.uk    or agyemangisaac45@gmail.com</p>
+            <p class="flex items-center"><i data-feather="phone" class="mr-2"></i> +86 19150045217</p>
+            <p class="flex items-center"><i data-feather="map-pin" class="mr-2"></i> Building 14, Room 512-06</p>
+          </div>
+        </div>
+        <div>
+          <h3 class="text-sm font-semibold text-gray-300 tracking-wider uppercase">Quick Links</h3>
+          <div class="mt-4 space-y-4 text-gray-300">
+            <a href="index.html" class="block hover:text-white">Home</a>
+            <a href="publications.html" class="block hover:text-white">Publications</a>
+            <a href="teaching.html" class="block hover:text-white">Teaching</a>
+          </div>
+        </div>
+        <div>
+          <h3 class="text-sm font-semibold text-gray-300 tracking-wider uppercase">More Links</h3>
+          <div class="mt-4 space-y-4 text-gray-300">
+            <a href="services.html" class="block hover:text-white">Services</a>
+            <!-- <a href="projects.html" class="block hover:text-white">Projects</a> -->
+            <a href="research-team.html" class="block hover:text-white">Research Team</a>
+          </div>
+        </div>
+        <div>
+          <h3 class="text-sm font-semibold text-gray-300 tracking-wider uppercase">Connect</h3>
+          <div class="mt-4 flex space-x-6 text-gray-300">
+            <!-- <a href="https://scholar.google.com/citations?hl=en&user=TPrjfq4AAAAJ" class="text-gray-400 hover:text-white"><i data-feather="google-scholar"></i></a> -->
+            <a href="https://scholar.google.com/citations?hl=en&user=TPrjfq4AAAAJ"  class="text-gray-400 hover:text-white" target="_blank"><i class="fa-brands fa-google"></i></a>
+            <a href="https://www.linkedin.com/in/isaac-osei-agyemang-phd-24370762/" class="text-gray-400 hover:text-white"><i data-feather="linkedin"></i></a>
+            <!-- <a href="#" class="text-gray-400 hover:text-white"><i data-feather="github"></i></a>
+            <a href="#" class="text-gray-400 hover:text-white"><i data-feather="twitter"></i></a> -->
+          </div>
+        </div>
+      </div>
+      <div class="mt-8 border-t border-gray-700 pt-8 md:flex md:items-center md:justify-between">
+        <!-- <p class="text-base text-gray-400">&copy; 2025 Academic Profile. All rights reserved.</p> -->
+        <p class="text-base text-gray-400">
+          &copy; <script>document.write(new Date().getFullYear())</script> Academic Profile. All rights reserved.
+        </p>
+        <div class="mt-4 md:mt-0"><p class="text-base text-gray-400">Designed with <i data-feather="heart" class="inline text-red-400"></i> for academia</p></div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function(){
+      const root = document.documentElement;
+      const storageKey = 'theme';
+      function applyTheme(mode){
+        if(mode === 'dark'){ root.classList.add('dark'); }
+        else { root.classList.remove('dark'); }
+        const icon = (mode === 'dark') ? 'sun' : 'moon';
+        document.querySelectorAll('#themeToggle i, #themeToggleMobile i').forEach(el => el.setAttribute('data-feather', icon));
+        feather.replace();
+      }
+      const preferred = localStorage.getItem(storageKey) || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      applyTheme(preferred);
+      function toggle(){
+        const next = root.classList.contains('dark') ? 'light' : 'dark';
+        localStorage.setItem(storageKey, next);
+        applyTheme(next);
+      }
+      document.addEventListener('DOMContentLoaded', function(){
+        const t1 = document.getElementById('themeToggle');
+        const t2 = document.getElementById('themeToggleMobile');
+        if (t1) t1.addEventListener('click', toggle);
+        if (t2) t2.addEventListener('click', toggle);
+      });
+    })();
+
+    document.querySelector('.mobile-menu-button').addEventListener('click', function() {
+      document.querySelector('.mobile-menu').classList.toggle('hidden');
+    });
+
+    document.addEventListener('DOMContentLoaded', function() {
+      AOS.init({ duration: 800, easing: 'ease-in-out', once: true });
+      feather.replace();
+    });
+  </script>
+  <!-- Back to Top Button -->
+<button id="backToTop"
+        class="hidden fixed bottom-8 right-8 bg-green-600 text-white p-3 rounded-full shadow-lg hover:bg-green-700 transition-opacity duration-300 dark:bg-green-500 dark:hover:bg-green-400"
+        aria-label="Back to top">
+  <i data-feather="arrow-up"></i>
+</button>
+
+<script>
+  // Show button after scrolling down 300px
+  const backToTopBtn = document.getElementById("backToTop");
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 300) {
+      backToTopBtn.classList.remove("hidden");
+      backToTopBtn.classList.add("flex");
+    } else {
+      backToTopBtn.classList.add("hidden");
+    }
+  });
+
+  // Scroll smoothly to top when clicked
+  backToTopBtn.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+</script>
+</body>
+</html>

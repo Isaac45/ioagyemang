@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Research Team | Academic Profile</title>
+  <!-- <script>
+    tailwind = window.tailwind || {};
+    tailwind.config = { darkMode: 'class' };
+  </script> -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+  <script src="https://unpkg.com/feather-icons"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    .nav-link:hover { color: #16a34a; }
+    .card-hover:hover { transform: translateY(-3px); box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1); }
+    .badge { border-radius: 9999px; }
+    .year-summary::-webkit-details-marker { display: none; }
+    .avatar { object-fit: cover; }
+    .hero-green { background: linear-gradient(135deg, #0f5132 0%, #198754 100%); }
+  </style>
+</head>
+<body class="font-sans antialiased text-gray-800 dark:text-gray-100 dark:bg-gray-900">
+  <nav class="bg-white/90 dark:bg-gray-900/80 backdrop-blur shadow-sm sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between h-16">
+        <div class="flex items-center">
+          <span class="text-xl font-semibold text-green-600 dark:text-green-400">Academic Profile</span>
+        </div>
+        <div class="hidden md:flex items-center space-x-8">
+          <a href="index.html" class="nav-link text-gray-700 hover:text-green-600 font-medium dark:text-gray-200">Home</a>
+          <a href="publications.html" class="nav-link text-gray-700 hover:text-green-600 font-medium dark:text-gray-200">Publications</a>
+          <a href="teaching.html" class="nav-link text-gray-700 hover:text-green-600 font-medium dark:text-gray-200">Teaching</a>
+          <a href="services.html" class="nav-link text-gray-700 hover:text-green-600 font-medium dark:text-gray-200">Services</a>
+          <!-- <a href="projects.html" class="nav-link text-gray-700 hover:text-green-600 font-medium dark:text-gray-200">Projects</a> -->
+          <a href="research-team.html" class="nav-link text-green-600 hover:text-green-600 font-medium dark:text-green-400">Research Team</a>
+          <a href="collaborators.html" class="nav-link text-gray-700 hover:text-green-600 font-medium dark:text-gray-200">Collaborators</a>
+        </div>
+        <div class="flex items-center gap-3">
+          <!-- <button id="themeToggle" class="hidden md:inline-flex items-center gap-2 px-3 py-1.5 rounded-md border border-gray-200 text-sm bg-white hover:bg-gray-50 dark:bg-gray-800 dark:hover:bg-gray-700 dark:border-gray-700">
+            <i data-feather="moon" class="h-4 w-4"></i><span class="sr-only">Toggle dark mode</span>
+          </button> -->
+          <button class="mobile-menu-button md:hidden p-2 rounded-md border border-gray-200 dark:border-gray-700">
+            <i data-feather="menu"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="mobile-menu hidden md:hidden bg-white dark:bg-gray-900 border-t border-gray-100 dark:border-gray-800">
+      <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+        <a href="index.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-green-600 hover:bg-gray-50 dark:text-gray-200 dark:hover:bg-gray-800">Home</a>
+        <a href="publications.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-green-600 hover:bg-gray-50 dark:text-gray-200 dark:hover:bg-gray-800">Publications</a>
+        <a href="teaching.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-green-600 hover:bg-gray-50 dark:text-gray-200 dark:hover:bg-gray-800">Teaching</a>
+        <a href="services.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-green-600 hover:bg-gray-50 dark:text-gray-200 dark:hover:bg-gray-800">Services</a>
+        <!-- <a href="projects.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-green-600 hover:bg-gray-50 dark:text-gray-200 dark:hover:bg-gray-800">Projects</a> -->
+        <a href="research-team.html" class="block px-3 py-2 rounded-md text-base font-medium text-green-600 dark:text-green-400">Research Team</a>
+        <a href="collaborators.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-green-600 hover:bg-gray-50 dark:text-gray-200 dark:hover:bg-gray-800">Collaborators</a>
+        <!-- <button id="themeToggleMobile" class="mt-2 w-full inline-flex items-center justify-center gap-2 px-3 py-2 rounded-md border text-sm bg-white hover:bg-gray-50 border-gray-200 dark:bg-gray-800 dark:hover:bg-gray-700 dark:border-gray-700">
+          <i data-feather="moon" class="h-4 w-4"></i> Toggle dark mode
+        </button> -->
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero-green text-white py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h1 class="text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl" data-aos="fade-up">Research Team</h1>
+      <p class="mt-6 max-w-3xl mx-auto text-xl" data-aos="fade-up" data-aos-delay="100">
+        Students I supervise. Expand each year to view names, email addresses, dissertation topics, and photos.
+      </p>
+    </div>
+  </header>
+
+  <section class="bg-white dark:bg-gray-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+      <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4" data-aos="fade-up">
+        <div class="flex items-center gap-3">
+          <div class="relative">
+            <i data-feather="search" class="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-gray-400"></i>
+            <input id="searchInput" type="text" placeholder="Search by name, email, or topic..." class="pl-10 pr-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500 w-72 dark:bg-gray-900 dark:border-gray-700 dark:text-gray-100" />
+          </div>
+          <button id="clearSearch" class="px-3 py-2 rounded-md border text-sm bg-white hover:bg-gray-50 dark:bg-gray-900 dark:border-gray-700">Clear</button>
+        </div>
+        <div class="text-sm text-gray-600 dark:text-gray-300">
+          <span id="totalCount" class="font-semibold">0</span> students listed
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <main class="py-4 bg-white dark:bg-gray-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div id="yearsContainer" class="space-y-6"></div>
+      <!-- <div class="mt-10 bg-green-50 border border-green-100 rounded-xl p-6 dark:bg-green-900/20 dark:border-green-900/40" data-aos="fade-up">
+        <h3 class="text-lg font-semibold text-gray-900 dark:text-white">How to update this list</h3>
+        <ol class="list-decimal pl-5 mt-2 text-gray-700 dark:text-gray-300 space-y-1 text-sm">
+          <li>Scroll to the <span class="font-medium">studentsData</span> block in the page source.</li>
+          <li>Add, remove, or edit entries under each year <span class="text-gray-600 dark:text-gray-300">(name, email, topic, optional <code>img</code> path)</span>.</li>
+          <li>Place photos in <code>/images/</code> and set <code>img: "images/your-photo.jpg"</code>. If omitted, a placeholder avatar appears.</li>
+        </ol>
+      </div> -->
+    </div>
+  </main>
+
+  <footer class="bg-gray-800 text-white py-12 mt-12 dark:bg-black">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+        <div>
+          <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">Contact</h3>
+          <div class="mt-4 space-y-4 text-gray-300">
+            <p class="flex items-center"><i data-feather="mail" class="mr-2"></i> ioa2@stir.ac.uk    or agyemangisaac45@gmail.com</p>
+            <p class="flex items-center"><i data-feather="phone" class="mr-2"></i> +86 19150045217</p>
+            <p class="flex items-center"><i data-feather="map-pin" class="mr-2"></i> Building 14, Room 512-06</p>
+          </div>
+        </div>
+        <div>
+          <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">Quick Links</h3>
+          <div class="mt-4 space-y-4 text-gray-300">
+            <a href="index.html" class="block hover:text-white">Home</a>
+            <a href="publications.html" class="block hover:text-white">Publications</a>
+            <a href="teaching.html" class="block hover:text-white">Teaching</a>
+            <a href="services.html" class="block hover:text-white">Services</a>
+          </div>
+        </div>
+        <div>
+          <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">More Links</h3>
+          <div class="mt-4 space-y-4 text-gray-300">
+            <!-- <a href="projects.html" class="block hover:text-white">Projects</a> -->
+            <a href="research-team.html" class="block hover:text-white">Research Team</a>
+            <a href="collaborators.html" class="block hover:text-white">Collaborators</a>
+          </div>
+        </div>
+        <div>
+          <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">Connect</h3>
+          <div class="mt-4 flex space-x-6 text-gray-300">
+            <!-- <a href="https://scholar.google.com/citations?hl=en&user=TPrjfq4AAAAJ" class="text-gray-400 hover:text-white"><i data-feather="google-scholar"></i></a> -->
+            <a href="https://scholar.google.com/citations?hl=en&user=TPrjfq4AAAAJ"  class="text-gray-400 hover:text-white" target="_blank"><i class="fa-brands fa-google"></i></a>
+            <a href="https://www.linkedin.com/in/isaac-osei-agyemang-phd-24370762/" class="text-gray-400 hover:text-white"><i data-feather="linkedin"></i></a>
+            <!-- <a href="#" class="text-gray-400 hover:text-white"><i data-feather="github"></i></a>
+            <a href="#" class="text-gray-400 hover:text-white"><i data-feather="twitter"></i></a> -->
+          </div>
+        </div>
+      </div>
+      <div class="mt-8 border-t border-gray-700 pt-8 md:flex md:items-center md:justify-between">
+        <!-- <p class="text-base text-gray-400">&copy; 2025 Academic Profile. All rights reserved.</p> -->
+        <p class="text-base text-gray-400">
+          &copy; <script>document.write(new Date().getFullYear())</script> Academic Profile. All rights reserved.
+        </p>
+        <div class="mt-4 md:mt-0"><p class="text-base text-gray-400">Designed with <i data-feather="heart" class="inline text-red-400"></i> for academia</p></div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // THEME: persistence + toggles
+    (function(){
+      const root = document.documentElement;
+      const KEY = 'theme';
+      function apply(mode){
+        if(mode==='dark'){ root.classList.add('dark'); } else { root.classList.remove('dark'); }
+        const icon = (mode==='dark') ? 'sun' : 'moon';
+        document.querySelectorAll('#themeToggle i, #themeToggleMobile i').forEach(el=> el.setAttribute('data-feather', icon));
+        feather.replace();
+      }
+      const preferred = localStorage.getItem(KEY) || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      apply(preferred);
+      function toggle(){ const next = root.classList.contains('dark') ? 'light' : 'dark'; localStorage.setItem(KEY,next); apply(next); }
+      document.addEventListener('DOMContentLoaded', ()=>{
+        const t1 = document.getElementById('themeToggle');
+        const t2 = document.getElementById('themeToggleMobile');
+        if (t1) t1.addEventListener('click', toggle);
+        if (t2) t2.addEventListener('click', toggle);
+      });
+    })();
+
+    // ======= EDIT THIS DATA TO UPDATE THE PAGE =======
+    const studentsData = [
+      { year: 2025, note: "8 students", students: [
+        { name: "Lǐ Sùtíng(Greenlee)", email: "lisuting@stu.cdu.edu.cn", topic: "Application of Interpretable Machine Learning Model for Short-Term Rainfall Prediction", img: "students/images/25/greenlee.jpg"},
+        { name: "WÚ Xiǎoqí (Seaki)", email: "wuxiaoqi@stu.cdu.edu.cn", topic: "An Integrated Learning Model for Cardiac Arrest Prediction", img: "students/images/25/seaki.jpg"},
+        { name: "ZHOU Ziiàn(Brian)", email: "zhouzijian@stu.cdu.edu.cn", topic: "Beyond Prediction: Interpreting House Price Models with SHAP for Transparent Real Estate Appraisal", img: "students/images/25/brian.jpg"},
+        { name: "ZÉ Rénzhuōmǎ(Margo)", email: "zerenzhuoma@stu.cdu.edu.cn", topic: "Road Traffic Accident Prediction and Risk Factor Analysis Using Machine Learning", img: "students/images/25/margo.jpg"},
+        { name: "WÁNG Zhí (Alex)", email: "wangzhi@stu.cdu.edu.cn", topic: "Prediction of Obesity Levels Based on Machine Learning", img: "students/images/25/alex.jpg"},
+        { name: "YÁNG Xinyi (Jean)", email: "yangxinyi154@stu.cdu.edu.cn", topic: "Analysing Bike Rentals Demand Using Machine Learning and Seasonal Features: Evidence from the UCI Bike Sharing Dataset", img: "students/images/25/jean.jpg"},
+        { name: "ZHANG Yjin (Anthony)", email: "zhangyijin@stu.cdu.edu.cn", topic: "Explaining Spotify Track Popularity through Machine Learning and Audio Feature Analysis", img: "students/images/25/.jpg"},
+        { name: "FANG Yǔtóng (Kevin)", email: "fangyutong@stu.cdu.edu.cn", topic: "Market analysis and forecasting based on automotive sales data and Machine Learning", img: "students/images/25/kevin.jpg"}
+      ]},
+      { year: 2024, note: "12 students", students: [
+        { name: "YǏN Chongyào (Robin)", email: "yinzhongyao@stu.cdu.edu.cn", topic: "Diabetes Prediction via Dynamic Ensembling with performance-based model selection", img: "images/student1.jpg" },
+        { name: "XUĒ Jiālín (Ethan)", email: "xuejialin@stu.cdu.edu.cn", topic: "Optimizing Hotel Revenue through Demand Forecasting and Dynamic Pricing Using Machine Learning", img: "images/student2.jpg" },
+        { name: "SHŪ Língjuān (Sophia)", email: "shulingjuan@stu.cdu.edu.cn", topic: "Enhancing Player Churn Visual Prediction with Sentiment Analysis of Online Reviews", img: "students/images/24/sophia.PNG" },
+        { name: "YÁN Shèngxuān (Zane)", email: "yanshengxuan@stu.cdu.edu.cn", topic: "Email Spam Detection with Machine Learning and Natural Language Processing", img: "images/student1.jpg" },
+        { name: "XÚ Zixiáng (Aiden)", email: "xuzixiang@stu.cdu.edu.cn", topic: "Using Machine Learning to predict and classify COVID-19 deaths and recovery cases", img: "images/student1.jpg" },
+        { name: "ZHÀO Zixuān (Scarlett)", email: "zhaozixuan@stu.cdu.edu.cn", topic: "A feasible analysis and prediction of Cardiovascular disease", img: "students/images/24/scarlett.PNG" },
+        { name: "LIÚ Xuǎnyǔ (Alex)", email: "liuxuanyu@stu.cdu.edu.cn", topic: "A movie recommendation system based on hybrid", img: "images/student1.jpg" },
+        { name: "WǓ Guānduō (Ray)", email: "wuguanduo@stu.cdu.edu.cn", topic: "Student Grade Analysis and Personalized Learning Resource Recommendation System", img: "students/images/24/ray.PNG" },
+        { name: "LǏ Yǎnxiāo (Sam)", email: "liyanxiao@stu.cdu.edu.cn", topic: "A Deep Learning-Based System for Discovering Hidden Criminal Events in Social Media Image Information", img: "images/student1.jpg" },
+        { name: "LǏ Yuèháng (Lyra)", email: "liyuehang@stu.cdu.edu.cn", topic: "The Application of Big Data in the Medical Field to Help Improve Disease Predication", img: "students/images/24/lyra.PNG" },
+        { name: "AÓ Yǔhéng (Victor)", email: "aoyuheng@stu.cdu.edu.cn", topic: "Improving Player Retention through Predictive Modeling of Player Activity in Online Games", img: "images/student1.jpg" },
+        { name: "YUÁN Shuài (Evan)", email: "yuanshuaiEvan@stu.cdu.edu.cn", topic: "Predicting Bitcoin Prices Using Machine Learning: A Comprehensive Analysis of Market Data and Event-Driven Models", img: "students/images/24/evan.jpg" }
+      ]}
+    ];
+
+    const yearsContainer = document.getElementById('yearsContainer');
+    const totalCountEl = document.getElementById('totalCount');
+    const searchInput = document.getElementById('searchInput');
+    const clearBtn = document.getElementById('clearSearch');
+
+    function mailLink(email){ return `mailto:${email}`; }
+    function placeholderFor(student){
+      const key = encodeURIComponent(student.email || student.name || Math.random().toString());
+      return `https://i.pravatar.cc/160?u=${key}`;
+    }
+
+    function createStudentRow(student){
+      const row = document.createElement('div');
+      row.className = "grid grid-cols-1 md:grid-cols-12 gap-3 md:gap-4 items-start p-4 rounded-xl border border-gray-100 card-hover bg-white dark:bg-gray-900 dark:border-gray-800";
+      row.setAttribute('data-name', (student.name||'').toLowerCase());
+      row.setAttribute('data-email', (student.email||'').toLowerCase());
+      row.setAttribute('data-topic', (student.topic||'').toLowerCase());
+
+      const imgSrc = student.img && student.img.trim() !== "" ? student.img : placeholderFor(student);
+
+      row.innerHTML = `
+        <div class="md:col-span-2 flex md:block">
+          <img src="${imgSrc}" alt="${student.name}" class="avatar h-16 w-16 md:h-20 md:w-20 rounded-full border-2 border-white shadow-md" loading="lazy" />
+        </div>
+        <div class="md:col-span-4">
+          <div class="flex items-center gap-2">
+            <i data-feather="user" class="h-4 w-4 text-green-600"></i>
+            <span class="font-medium text-gray-900 dark:text-white">${student.name}</span>
+          </div>
+          <div class="mt-1 text-sm">
+            <a href="${mailLink(student.email)}" class="text-green-600 hover:text-green-800 dark:text-green-400">${student.email}</a>
+          </div>
+        </div>
+        <div class="md:col-span-6 text-gray-700 dark:text-gray-300">
+          <div class="flex items-start gap-2">
+            <i data-feather="book-open" class="h-4 w-4 mt-0.5 text-gray-500"></i>
+            <p>${student.topic}</p>
+          </div>
+        </div>
+      `;
+      return row;
+    }
+
+    function renderYearSection(yearObj){
+      const section = document.createElement('section');
+      section.setAttribute('data-year', yearObj.year);
+      section.innerHTML = `
+        <details class="group bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-xl overflow-hidden" open>
+          <summary class="cursor-pointer year-summary select-none flex items-center justify-between px-4 py-4 sm:px-6 hover:bg-gray-50 dark:hover:bg-gray-800">
+            <div class="flex items-center gap-3">
+              <span class="inline-flex h-8 w-8 items-center justify-center rounded-full bg-green-600 text-white font-semibold">${yearObj.year.toString().slice(-2)}</span>
+              <h2 class="text-lg sm:text-xl font-semibold text-gray-900 dark:text-white">Cohort ${yearObj.year}</h2>
+              <span class="badge ml-2 px-2 py-1 text-xs bg-gray-100 text-gray-700 dark:bg-gray-800 dark:text-gray-100">${yearObj.note || yearObj.students.length + " students"}</span>
+            </div>
+            <div class="text-gray-500 group-open:hidden flex items-center gap-1"><span>Expand</span><i data-feather="chevron-down"></i></div>
+            <div class="text-gray-500 hidden group-open:flex items-center gap-1"><span>Collapse</span><i data-feather="chevron-up"></i></div>
+          </summary>
+          <div class="px-4 sm:px-6 pb-6">
+            <div class="rounded-lg bg-gray-50 dark:bg-gray-950 border border-gray-100 dark:border-gray-800 p-4 sm:p-6">
+              <div class="grid gap-3" id="year-${yearObj.year}-list"></div>
+            </div>
+          </div>
+        </details>
+      `;
+      yearsContainer.appendChild(section);
+
+      const list = section.querySelector(`#year-${yearObj.year}-list`);
+      yearObj.students.forEach(stu => list.appendChild(createStudentRow(stu)));
+    }
+
+    function renderAll(data){
+      yearsContainer.innerHTML = "";
+      let total = 0;
+      data.forEach(y => { renderYearSection(y); total += y.students.length; });
+      totalCountEl.textContent = total;
+      feather.replace();
+      AOS.refresh();
+    }
+
+    function applySearch(){
+      const q = (searchInput.value || "").trim().toLowerCase();
+      let visibleCount = 0;
+      document.querySelectorAll('[id^="year-"][id$="-list"] > div').forEach(row => {
+        const hay = (row.getAttribute('data-name') + " " + row.getAttribute('data-email') + " " + row.getAttribute('data-topic'));
+        const show = !q || hay.includes(q);
+        row.style.display = show ? "" : "none";
+        if (show) visibleCount++;
+      });
+      totalCountEl.textContent = visibleCount;
+    }
+
+    document.addEventListener('DOMContentLoaded', function () {
+      AOS.init({ duration: 800, easing: 'ease-in-out', once: true });
+      renderAll(studentsData);
+      searchInput.addEventListener('input', applySearch);
+      clearBtn.addEventListener('click', () => { searchInput.value = ""; applySearch(); });
+      document.querySelector('.mobile-menu-button').addEventListener('click', function () {
+        document.querySelector('.mobile-menu').classList.toggle('hidden');
+      });
+    });
+  </script>
+  <!-- Back to Top Button -->
+<button id="backToTop"
+        class="hidden fixed bottom-8 right-8 bg-green-600 text-white p-3 rounded-full shadow-lg hover:bg-green-700 transition-opacity duration-300 dark:bg-green-500 dark:hover:bg-green-400"
+        aria-label="Back to top">
+  <i data-feather="arrow-up"></i>
+</button>
+
+<script>
+  // Show button after scrolling down 300px
+  const backToTopBtn = document.getElementById("backToTop");
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 300) {
+      backToTopBtn.classList.remove("hidden");
+      backToTopBtn.classList.add("flex");
+    } else {
+      backToTopBtn.classList.add("hidden");
+    }
+  });
+
+  // Scroll smoothly to top when clicked
+  backToTopBtn.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+</script>
+</body>
+</html>

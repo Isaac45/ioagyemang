@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Publications | Academic Profile</title>
+  <!-- <script>
+    // Tailwind CDN config (class-based dark mode)
+    window.tailwind = window.tailwind || {};
+    tailwind.config = { darkMode: 'class' };
+  </script> -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+  <script src="https://unpkg.com/feather-icons"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    .nav-link:hover { color: #16a34a; } /* green-600 */
+    .publication-card:hover { transform: translateY(-3px); box-shadow: 0 10px 15px -3px rgba(0,0,0,.1); }
+    .chip { border-radius: 9999px; }
+    .hero-green { background: linear-gradient(135deg, #0f5132 0%, #198754 100%); }
+  </style>
+</head>
+<body class="font-sans antialiased text-gray-800 dark:text-gray-100 dark:bg-gray-900">
+  <!-- Navigation -->
+  <nav class="bg-white/90 dark:bg-gray-900/80 backdrop-blur shadow-sm sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between h-16">
+        <div class="flex items-center">
+          <span class="text-xl font-semibold text-green-600 dark:text-green-400">Academic Profile</span>
+        </div>
+        <div class="hidden md:flex items-center space-x-8">
+          <a href="index.html" class="nav-link text-gray-700 hover:text-green-600 font-medium dark:text-gray-200">Home</a>
+          <a href="publications.html" class="nav-link text-green-600 hover:text-green-600 font-medium dark:text-green-400">Publications</a>
+          <a href="teaching.html" class="nav-link text-gray-700 hover:text-green-600 font-medium dark:text-gray-200">Teaching</a>
+          <a href="services.html" class="nav-link text-gray-700 hover:text-green-600 font-medium dark:text-gray-200">Services</a>
+          <!-- <a href="projects.html" class="nav-link text-gray-700 hover:text-green-600 font-medium dark:text-gray-200">Projects</a> -->
+          <a href="research-team.html" class="nav-link text-gray-700 hover:text-green-600 font-medium dark:text-gray-200">Research Team</a>
+          <a href="collaborators.html" class="nav-link text-gray-700 hover:text-green-600 font-medium dark:text-gray-200">Collaborators</a>
+        </div>
+        <div class="flex items-center gap-3">
+          <!-- <button id="themeToggle" class="hidden md:inline-flex items-center gap-2 px-3 py-1.5 rounded-md border border-gray-200 text-sm bg-white hover:bg-gray-50 dark:bg-gray-800 dark:hover:bg-gray-700 dark:border-gray-700">
+            <i data-feather="moon" class="h-4 w-4"></i><span class="sr-only">Toggle dark mode</span>
+          </button> -->
+          <button class="mobile-menu-button md:hidden p-2 rounded-md border border-gray-200 dark:border-gray-700">
+            <i data-feather="menu"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="mobile-menu hidden md:hidden bg-white dark:bg-gray-900 border-t border-gray-100 dark:border-gray-800">
+      <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+        <a href="index.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-green-600 hover:bg-gray-50 dark:text-gray-200 dark:hover:bg-gray-800">Home</a>
+        <a href="publications.html" class="block px-3 py-2 rounded-md text-base font-medium text-green-600 hover:bg-gray-50 dark:text-green-400 dark:hover:bg-gray-800">Publications</a>
+        <a href="teaching.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-green-600 hover:bg-gray-50 dark:text-gray-200 dark:hover:bg-gray-800">Teaching</a>
+        <a href="services.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-green-600 hover:bg-gray-50 dark:text-gray-200 dark:hover:bg-gray-800">Services</a>
+        <!-- <a href="projects.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-green-600 hover:bg-gray-50 dark:text-gray-200 dark:hover:bg-gray-800">Projects</a> -->
+        <a href="research-team.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-green-600 hover:bg-gray-50 dark:text-gray-200 dark:hover:bg-gray-800">Research Team</a>
+        <a href="collaborators.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-green-600 hover:bg-gray-50 dark:text-gray-200 dark:hover:bg-gray-800">Collaborators</a>
+        <!-- <button id="themeToggleMobile" class="mt-2 w-full inline-flex items-center justify-center gap-2 px-3 py-2 rounded-md border text-sm bg-white hover:bg-gray-50 border-gray-200 dark:bg-gray-800 dark:hover:bg-gray-700 dark:border-gray-700">
+          <i data-feather="moon" class="h-4 w-4"></i> Toggle dark mode
+        </button> -->
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="hero-green text-white py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h1 class="text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl" data-aos="fade-up">Publications</h1>
+      <p class="mt-6 max-w-3xl mx-auto text-xl" data-aos="fade-up" data-aos-delay="100">
+        A comprehensive list of my academic publications including journal articles, conference papers, and book chapters.
+      </p>
+    </div>
+  </header>
+
+  <main class="py-12 bg-white dark:bg-gray-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- Controls -->
+      <section class="mb-6" data-aos="fade-up">
+        <div class="flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
+          <div class="flex items-center gap-2">
+            <div class="relative">
+              <i data-feather="search" class="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-gray-400"></i>
+              <input id="q" type="text" placeholder="Search title, authors, venue, year..." class="pl-10 pr-3 py-2 border rounded-md w-72 focus:outline-none focus:ring-2 focus:ring-green-500 dark:bg-gray-900 dark:border-gray-700 dark:text-gray-100">
+            </div>
+            <button id="clearBtn" class="px-3 py-2 border rounded-md bg-white hover:bg-gray-50 text-sm dark:bg-gray-900 dark:border-gray-700">Clear</button>
+          </div>
+          <div class="flex flex-wrap gap-2">
+            <button data-filter="all" class="chip px-3 py-2 bg-green-100 text-green-700">All</button>
+            <button data-filter="journal" class="chip px-3 py-2 bg-gray-100 dark:bg-gray-800 dark:text-gray-100">Journals</button>
+            <button data-filter="conference" class="chip px-3 py-2 bg-gray-100 dark:bg-gray-800 dark:text-gray-100">Conferences</button>
+            <button data-filter="book" class="chip px-3 py-2 bg-gray-100 dark:bg-gray-800 dark:text-gray-100">Books</button>
+            <select id="yearRange" class="px-3 py-2 border rounded-md dark:bg-gray-900 dark:border-gray-700 dark:text-gray-100">
+              <option value="">All years</option>
+              <option value="2025-2023">2025–2023</option>
+              <option value="2022-2020">2022–2020</option>
+              <option value="older">Older</option>
+            </select>
+          </div>
+        </div>
+        <div class="mt-3 flex flex-wrap gap-2">
+          <button id="importJsonBtn" class="px-3 py-2 border rounded-md bg-white hover:bg-gray-50 text-sm flex items-center gap-1 dark:bg-gray-900 dark:border-gray-700">
+            <i data-feather="upload-cloud" class="h-4 w-4"></i> Import JSON
+          </button>
+          <button id="importBibBtn" class="px-3 py-2 border rounded-md bg-white hover:bg-gray-50 text-sm flex items-center gap-1 dark:bg-gray-900 dark:border-gray-700">
+            <i data-feather="book-open" class="h-4 w-4"></i> Import BibTeX
+          </button>
+          <a href="https://scholar.google.com/citations?user=TPrjfq4AAAAJ&hl=en" target="_blank" class="px-3 py-2 border rounded-md bg-white hover:bg-gray-50 text-sm flex items-center gap-1 dark:bg-gray-900 dark:border-gray-700">
+            <i data-feather="external-link" class="h-4 w-4"></i> Open Google Scholar
+          </a>
+          <!-- <span class="text-sm text-gray-500 dark:text-gray-400">Tip: Export from Scholar as BibTeX, then use “Import BibTeX”.</span> -->
+        </div>
+        <input id="fileJson" type="file" accept=".json,application/json" class="hidden">
+        <input id="fileBib" type="file" accept=".bib,text/plain" class="hidden">
+      </section>
+
+      <!-- List -->
+      <section>
+        <div id="pubList" class="space-y-6"></div>
+
+        <div class="mt-8 flex items-center justify-between">
+          <p class="text-sm text-gray-700 dark:text-gray-300">
+            Showing <span id="showFrom" class="font-medium">0</span>–<span id="showTo" class="font-medium">0</span> of <span id="showTotal" class="font-medium">0</span>
+          </p>
+          <div class="flex gap-2">
+            <button id="prevPage" class="px-3 py-1 rounded border border-gray-300 text-sm font-medium bg-white hover:bg-gray-50 dark:bg-gray-900 dark:border-gray-700">Previous</button>
+            <span id="pageInfo" class="px-3 py-1 text-sm text-gray-600 dark:text-gray-300"></span>
+            <button id="nextPage" class="px-3 py-1 rounded border border-gray-300 text-sm font-medium bg-white hover:bg-gray-50 dark:bg-gray-900 dark:border-gray-700">Next</button>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-12 dark:bg-black">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+        <div>
+          <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">Contact</h3>
+          <div class="mt-4 space-y-4 text-gray-300">
+            <p class="flex items-center"><i data-feather="mail" class="mr-2"></i> ioa2@stir.ac.uk    or agyemangisaac45@gmail.com</p>
+            <p class="flex items-center"><i data-feather="phone" class="mr-2"></i> +86 19150045217</p>
+            <p class="flex items-center"><i data-feather="map-pin" class="mr-2"></i> Building 14, Room 512-06</p>
+          </div>
+        </div>
+        <div>
+          <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">Quick Links</h3>
+          <div class="mt-4 space-y-4 text-gray-300">
+            <a href="index.html" class="block hover:text-white">Home</a>
+            <a href="publications.html" class="block hover:text-white">Publications</a>
+            <a href="teaching.html" class="block hover:text-white">Teaching</a>
+          </div>
+        </div>
+        <div>
+          <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">More Links</h3>
+          <div class="mt-4 space-y-4 text-gray-300">
+            <a href="services.html" class="block hover:text-white">Services</a>
+            <!-- <a href="projects.html" class="block hover:text-white">Projects</a> -->
+            <a href="research-team.html" class="block hover:text-white">Research Team</a>
+          </div>
+        </div>
+        <div>
+          <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">Connect</h3>
+          <div class="mt-4 flex space-x-6 text-gray-300">
+            <!-- <a href="https://scholar.google.com/citations?hl=en&user=TPrjfq4AAAAJ" class="text-gray-400 hover:text-white"><i data-feather="google-scholar"></i></a> -->
+            <a href="https://scholar.google.com/citations?hl=en&user=TPrjfq4AAAAJ"  class="text-gray-400 hover:text-white" target="_blank"><i class="fa-brands fa-google"></i></a>
+            <a href="https://www.linkedin.com/in/isaac-osei-agyemang-phd-24370762/" class="text-gray-400 hover:text-white"><i data-feather="linkedin"></i></a>
+            <!-- <a href="#" class="text-gray-400 hover:text-white"><i data-feather="github"></i></a>
+            <a href="#" class="text-gray-400 hover:text-white"><i data-feather="twitter"></i></a> -->
+          </div>
+        </div>
+      </div>
+      <div class="mt-8 border-t border-gray-700 pt-8 md:flex md:items-center md:justify-between">
+        <!-- <p class="text-base text-gray-400">&copy; 2025 Academic Profile. All rights reserved.</p> -->
+        <p class="text-base text-gray-400">
+          &copy; <script>document.write(new Date().getFullYear())</script> Academic Profile. All rights reserved.
+        </p>
+        <div class="mt-4 md:mt-0"><p class="text-base text-gray-400">Designed with <i data-feather="heart" class="inline text-red-400"></i> for academia</p></div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // ---------- THEME: persistence + toggles ----------
+    (function(){
+      const root = document.documentElement;
+      const KEY = 'theme';
+      function apply(mode){
+        if(mode==='dark'){ root.classList.add('dark'); }
+        else { root.classList.remove('dark'); }
+        const icon = (mode==='dark') ? 'sun' : 'moon';
+        document.querySelectorAll('#themeToggle i, #themeToggleMobile i').forEach(el=>el.setAttribute('data-feather', icon));
+        feather.replace();
+      }
+      const preferred = localStorage.getItem(KEY) || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark':'light');
+      apply(preferred);
+      function toggle(){ const next = root.classList.contains('dark') ? 'light' : 'dark'; localStorage.setItem(KEY,next); apply(next); }
+      document.addEventListener('DOMContentLoaded', ()=>{
+        const t1 = document.getElementById('themeToggle');
+        const t2 = document.getElementById('themeToggleMobile');
+        if(t1) t1.addEventListener('click', toggle);
+        if(t2) t2.addEventListener('click', toggle);
+      });
+    })();
+
+    // ---------- DATA MODEL (edit or replace programmatically) ----------
+    let publications = [
+      {title:"Autonomous health assessment of civil infrastructure using deep learning and smart devices", year:2022, venue:"Automation in Construction", type:"journal", authors:"Isaac Osei Agyemang, Xiaoling Zhang, Daniel Acheampong, Isaac Adjei-Mensah, Goodlet Akwasi Kusi, Bernard Cobbinah Mawuli, Bless Lord Y Agbley", abstract:"Damage detection via drones is fundamental in infrastructure health assessment. However, object scale variation due to drones' swift movement and sparse scenes make damage detection challenging. This paper describes a multi-task framework, EnsembleDetNet, for damage detection and multi-label scene classification by leveraging object detectors and classifiers based on ensemble learning which induces diversity and strength-correlation. Further, a novel attention module that significantly improves EnsembleDetNet by about 5% is proposed via explicit ensembling of parallel and sequential channel and spatial attention maps. Extensive experiments with a public dataset and an onsite verification utilizing a micro drone indicate that EsembleDetNet outperforms state-of-the-art detectors and classifiers under variant evaluation metrics. EnsembleDetNet has the potential to become a new paradigm in ….", tags:["Structural Health Monitoring","Damage Detection", "Deep Learning","Computer Vision"], doi:"https://www.sciencedirect.com/science/article/pii/S0926580522002692", pdf:"#"},
+      {title:"Structural damage detection via hierarchical damage information with volumetric assessment", year:2025, venue:"Measurement", type:"journal", authors:"Isaac Osei Agyemang, Isaac Adjei-Mensah, Adu Asare Baffour, Gordon Owusu Boateng, Daniel Acheampong", abstract:"Vision-based structural inspection is essential for ensuring the safety and longevity of infrastructure, but complex image environments, noisy labels, and reliance on manual damage assessments often hinder its effectiveness. This study introduces the Guided Detection Network (Guided-DetNet), a framework designed to address these challenges. Guided-DetNet is characterized by a Generative Attention Module (GAM), Hierarchical Elimination Algorithm (HEA), and Volumetric Contour Visual Assessment (VCVA). GAM leverages cross-horizontal and cross-vertical patch merging, as well as cross-foreground-background feature fusion, to generate diverse features that mitigate complex image environments. HEA addresses noisy labeling by utilizing hierarchical relationships among classes to refine instances given an image, thereby eliminating unlikely class instances. VCVA assesses the severity of detected ….", tags:["Structural Health Monitoring","Damage Detection", "Deep Learning"], doi:"https://www.sciencedirect.com/science/article/pii/S0263224125021347", pdf:"#"},
+      {title:"Multimodal melanoma detection with federated learning", year:2021, venue:"IEEE 18th international computer conference on wavelet active media technology and information processing (ICCWAMTIP)", type:"conference", authors:"Bless Lord Y Agbley, Jianping Li, Amin Ul Haq, Edem Kwedzo Bankas, Sultan Ahmad, Isaac Osei Agyemang, Delanyo Kulevome, Waldiodio David Ndiaye, Bernard Cobbinah, Shoistamo Latipova", abstract:"Melanoma disease analysis is increasingly approached using statistical machine learning techniques, including deep learning. These techniques require large sizes of datasets. However, health institutions are inhibited from sharing their patients' data due to concerns regarding the privacy of subjects. This paper presents a methodology that utilizes Federated Learning (FL) in ensuring the preservation of subjects' privacy during training. We fused two modalities: skin lesion images and their corresponding clinical data. The performance of the global federated model was compared with the results of a Centralized Learning (CL) scenario. The FL model is on-par with the CL model with only 0.39% and 0.73% higher F1-Score and Accuracy performances, respectively, obtained by the CL model. Through extended fine-tuning, the performance difference could be further minimized. Moreover, the FL model was 3.27 ….", tags:["Medical Image Analysis","Deep Learning","Federated Learning"], doi:"https://ieeexplore.ieee.org/abstract/document/9674116/", pdf:"#"},
+      {title:"Automated vision-based structural health inspection and assessment for post-construction civil infrastructure", year:2023, venue:"Automation in Construction", type:"journal", authors:"Isaac Osei Agyemang, Xiaoling Zhang, Isaac Adjei-Mensah, Daniel Acheampong, Linda Delali Fiasam, Collins Sey, Sophyani Banaamwini Yussif, Derrick Effah", abstract:"In the search to enhance the effectiveness and efficiency of structural health monitoring for preserving safety and integrity in civil infrastructure, the search for innovative technologies is of critical importance. This paper introduces ExpoDet, a comprehensive framework designed for autonomous health inspection and infrastructure assessment. ExpoDet features a multi-detection detector, autonomous navigation for micro aerial vehicles facilitated through secondary reward reinforcement learning, and a damage aggregation scheme for autonomous health assessment following detections. Moreover, it presents an attention module called EEAM+ that introduces dynamic feature orientation and significantly enhances the capabilities of ExpoDet. ExpoDet is extensively tested and evaluated in both offsite and field test experiments. Comparisons with several state-of-the-art object detectors coupled with attention modules ….", tags:["Structural Health Monitoring","Damage Detection", "Deep Learning"], doi:"https://www.sciencedirect.com/science/article/pii/S0926580523004132", pdf:"#"},
+
+      {title:"Cov-Fed: Federated learning-based framework for COVID-19 diagnosis using chest X-ray scans", year:2024, venue:"Engineering Applications of Artificial Intelligence", type:"journal", authors:"Isaac Adjei-Mensah, Xiaoling Zhang, Isaac Osei Agyemang, Sophyani Banaamwini Yussif, Adu Asare Baffour, Bernard Mawuli Cobbinah, Collins Sey, Linda Delali Fiasam, Ijeoma Amuche Chikwendu, Joseph Roger Arhin", abstract:"SARS-CoV-2, a member of the coronavirus family, causes COVID-19, which can range from the ordinary cold to the rare but fatal Severe Acute Respiratory Syndrome (SARS) and Middle East Respiratory Disease (MERS). Radiologists can better diagnose COVID-19 using deep learning and computer vision techniques. However, training requires large centralized datasets. In addition, medical data protection prevents centralized server training with medical data. In this study, we propose a federated learning-based framework, Cov-Fed, to facilitate decentralized training of medical data. Cov-Fed is characterized by the proposed Multi-Efficient Channel Attention Network (MECAN) and a multi-model user-server weight update mechanism, respectively. In addition, Cov-Fed leverages PySyft encryption and decryption mechanisms for privacy preservation. Due to the salient nature of features corresponding to ….", tags:["Medical Image Analysis","Federated Learning", "Classification"], doi:"https://www.sciencedirect.com/science/article/pii/S0952197623016329", pdf:"#"},
+
+      {title:"A comprehensive survey on deep graph representation learning methods", year:2023, venue:"Journal of Artificial Intelligence Research", type:"journal", authors:"Ijeoma Amuche Chikwendu, Xiaoling Zhang, Isaac Osei Agyemang, Isaac Adjei-Mensah, Ukwuoma Chiagoziem Chima, Chukwuebuka Joseph Ejiyi", abstract:"There has been a lot of activity in graph representation learning in recent years. Graph representation learning aims to produce graph representation vectors to represent the structure and characteristics of huge graphs precisely. This is crucial since the effectiveness of the graph representation vectors will influence how well they perform in subsequent tasks like anomaly detection, connection prediction, and node classification. Recently, there has been an increase in the use of other deep-learning breakthroughs for data-based graph problems. Graph-based learning environments have a taxonomy of approaches, and this study reviews all their learning ….", tags:["Representation Learning", "Deep Learning", "Graph Neural Network", "Graph Embedding"], doi:"https://www.jair.org/index.php/jair/article/view/14768", pdf:"#"},
+
+      {title:"VBlock: A blockchain-based tamper-proofing data protection model for internet of vehicle networks", year:2022, venue:"Sensors", type:"journal", authors:"Collins Sey, Hang Lei, Weizhong Qian, Xiaoyu Li, Linda Delali Fiasam, Seth Larweh Kodjiku, Isaac Adjei-Mensah, Isaac Osei Agyemang", abstract:"The rapid advancement of the Internet of Vehicles (IoV) has led to a massive growth in data received from IoV networks. The cloud storage has been a timely service that provides a vast range of data storage for IoV networks. However, existing data storage and access models used to manage and protect data in IoV networks have proven to be insufficient. They are centralized and usually accompanied by a lack of trust, transparency, security, immutability, and provenance. In this paper, we propose VBlock, a blockchain-based system that addresses the issues of illegal modification of outsourced vehicular data for smart city management and improvement. We introduce a novel collusion-resistant model for outsourcing data to cloud storage that ensures the network remains tamper-proof, has good data provenance and auditing, and solves the centralized problems prone to the single ….", tags:["Blockchain", "Internet of Vehicles (IoV)", "Smart City", "Tamper-proof"], doi:"https://www.mdpi.com/1424-8220/22/20/8083", pdf:"#"},
+
+      {title:"Automated valet parking and charging: A dynamic pricing and reservation-based framework leveraging multi-agent reinforcement learning", year:2024, venue:"IEEE Transactions on Intelligent Vehicles", type:"journal", authors:"Gordon Owusu Boateng, Haonan Si, Huang Xia, Xiansheng Guo, Cheng Chen, Isaac Osei Agyemang, Nirwan Ansari", abstract:"Vehicle parking resource provisioning in major cities and urban areas has gradually become a challenging issue in Intelligent Transportation Systems (ITS) due to the upward trend in car ownership rates. Besides, the increasing attractiveness of Autonomous Electric Vehicle (AEV) technologies complicates the parking problem as self-parking and EV-charging solutions need to be integrated into existing parking infrastructure. Dynamic pricing and reservation-based automated parking and charging are envisioned to accommodate the increasing demand for parking and EV-charging services. This will minimize traffic congestion and enhance road safety. This paper proposes a novel intelligent framework based on dynamic pricing and in-advance parking ….", tags:["Vehicle Dynamics", "Resource Management", "Dynamic Scheduling", "Games"], doi:"https://ieeexplore.ieee.org/abstract/document/10582308", pdf:"#"},
+
+      {title:"Investigating vision transformer models for low-resolution medical image recognition", year:2021, venue:"IEEE 18th International Computer Conference on Wavelet Active Media Technology and Information Processing (ICCWAMTIP)", type:"conference", authors:"Isaac Adjei-Mensah, Xiaoling Zhang, Adu Asare Baffour, Isaac Osei Agyemang, Sophyani Banaamwini Yussif, Bless Lord Y Agbley, Collins Sey", abstract:"Vision Transformers use self-attention techniques to learn long-range spatial relations to focus on the relevant parts of an image. They have achieved state-of-the-art results in many computer vision tasks. Recently, some methods have to leverage Vision Transformer-based models to tackle tasks in medical imaging. However, Vision Transformer emphasizes the low-resolution features due to the repetitive downsamplings, which result in a loss or lack of detailed localization information, making it highly unfit for low-level image recognition. In this paper, we investigate the performance of Vision Transformer on low-level medical ….", tags:["Deep Learning", "Medical Imaging", "Vision Transformer"], doi:"https://ieeexplore.ieee.org/abstract/document/9674065", pdf:"#"},
+
+      {title:"Enhanced deep convolutional neural network for building component detection towards structural health monitoring", year:2021, venue:"IEEE 4th International Conference on Pattern Recognition and Artificial Intelligence (PRAI)", type:"conference", authors:"Isaac Osei Agyemang, Xiaoling Zhang, Isaac Adjei Mensah, Bernard Cobbinah Mawuli, Bless Lord Y Agbley, Joseph Roger Arhin", abstract:"Civil structural component detection is an important stage in structural health monitoring for the interpretation and analysis of damages associated with various structural components. Structural component detection is a challenging task due to the asymmetrical shape of the components. We introduce Gabor filters as an enhancement for a one-stage detector. Generic Gabor filters are generated to replace the lower convolutional filters of the backbone of SSD. Evaluation of the variant SSD detector on structural imagery shows promising detection ….", tags:["Gabor Filters", "Structural Health Monitoring", "Detection", "Deep Learning"], doi:"https://ieeexplore.ieee.org/abstract/document/9551102", pdf:"#"},
+
+      {title:"Federated approach for lung and colon cancer classification", year:2022, venue:"IEEE 19th International Computer Conference on Wavelet Active Media Technology and Information Processing (ICCWAMTIP)", type:"conference", authors:"Bless Lord Y Agbley, Jianping Li, Amin Ul Haq, Edem Kwedzo Bankas, Gideon Adjorlolo, Isaac Osei Agyemang, Browne Judith Ayekai, Derrick Effah, Isaac Adjeimensah, Jalaluddin Khan", abstract:"Deep learning is fueled by massive data. However, medical data availability is a challenge affecting the robustness of models for Computer-Aided Diagnostics. Several factors contribute to the limited amount of labeled data. One is the expertise involved in annotating biopsies and scans collected from laboratories. Another is the sensitive nature of medical information. This research, therefore, focuses on using data obtained on different diseases using the same technique to increase the number of data available to boost the automatic feature engineering capability of deep learning. Hence, the paper studies a multi-center-based training ….", tags:["Federated Learning", "Lung Cancer", "Colon Cancer", "Deep learning"], doi:"https://ieeexplore.ieee.org/abstract/document/10016590", pdf:"#"},
+
+      {title:"ADCGNet: Attention-based dual channel Gabor network towards efficient detection and classification of electrocardiogram images", year:2023, venue:"Journal of King Saud University-Computer and Information Sciences", type:"journal", authors:"Joseph Roger Arhin, Xiaoling Zhang, Kenneth Coker, Isaac Osei Agyemang, Wisdom Kwame Attipoe, Francis Sam, Isaac Adjei-Mensah, Emmanuel Agyei", abstract:"Heart disease is a major health issue, and accurate diagnosis of irregular heartbeats and heart failure is crucial. Current diagnostic processes can be time-consuming, requiring significant effort from clinicians. An effective classifier, ADCGNet: Attention-based Dual Channel Gabor Network is proposed to address this challenge by accurately classifying anomalies. ADCGNet involves pre-processing every ECG beat into two-dimensional images using Analytical Morlet transform and then applying thirty-two Gabor filters and Sobel edge detection to enhance features. ADCGNet comprises three blocks ….", tags:["Arrhythmia", "Gabor Filters", "Congestive Heart Failure", "Analytic Morlet Transform", "Electrocardiogram"], doi:"https://www.sciencedirect.com/science/article/pii/S1319157823003178", pdf:"#"},
+
+      {title:"Lightweight real-time detection of components via a micro aerial vehicle with domain randomization towards structural health monitoring", year:2022, venue:"Periodica Polytechnica Civil Engineering", type:"journal", authors:"Isaac Osei Agyemang, Xiaoling Zhang, Isaac Adjei-Mensah, Joseph Roger Arhin, Emmanuel Agyei", abstract:"Civil structural component detection plays an integral role in Structural Health Monitoring (SHM) pre and post-construction. Challenges including but not limited to labor-intensiveness, cost, and time constraints associated with traditional methods make it a less opti-mal approach in SHM. Despite the success of deep convolutional neural networks in diverse detection problems, the required computational resources are a challenge. This has led to rendering a chunk of resource-constrained edge nodes less applicable with deep convolutional neural networks. In this paper, a computational-efficient deep convolutional neural network is presented based on Gabor filters and a color Canny edge detector. Generic Gabor filters are generated and used as initializers ….", tags:["Gabor Filters", "Color Canny Edge Detector", "Micro Aerial Vehicle", "Structural Health Monitoring,"], doi:"https://pp.bme.hu/ci/article/view/18689", pdf:"#"},
+
+      {title:"Multi-visual modality micro drone-based structural damage detection", year:2024, venue:"Engineering Applications of Artificial Intelligence", type:"journal", authors:"Isaac Osei Agyemang, Liaoyuan Zeng, Jianwen Chen, Isaac Adjei-Mensah, Daniel Acheampong", abstract:"Accurate detection and resilience of object detectors in structural damage detection are important in ensuring the continuous use of civil infrastructure. However, achieving robustness in object detectors remains a persistent challenge, impacting their ability to generalize effectively. This study proposes DetectorX, a robust framework for structural damage detection coupled with a micro drone. DetectorX addresses the challenges of object detector robustness by incorporating two innovative modules: a stem block and a spiral pooling technique. The stem block introduces a dynamic visual modality by leveraging the outputs of two Deep Convolutional Neural Network (DCNN) models. The framework employs the proposed event-based reward reinforcement learning to constrain the actions of a parent and child DCNN model leading to a reward. This results in the induction of two dynamic visual modalities alongside the ….", tags:["Structural Health Monitoring", "Damage Detection", "Micro Drones", "Deep Learning", "Reinforcement Learning"], doi:"https://www.sciencedirect.com/science/article/pii/S0952197624006183", pdf:"#"},
+
+      {title:"RPNet: Rotational pooling net for efficient Micro Aerial Vehicle trail navigation", year:2022, venue:"Engineering applications of artificial intelligence", type:"journal", authors:"Isaac Osei Agyemang, Xiaoling Zhang, Daniel Acheampong, Isaac Adjei-Mensah, Enoch Opanin Gyamfi, Joseph Roger Arhin, Williams Ayivi, Chikwendu Ijeoma Amuche", abstract:"Smart agile Micro Aerial Vehicles are becoming ubiquitous in industrial applications; however, their computational efficacy poses a constraint limiting their deployment. The challenge mentioned above is mitigated in the context of a Micro Aerial Vehicle vision-based navigation task. RPNet, a computational-efficient model, is proposed as a Micro Aerial Vehicle navigational controller. RPNet comprises a sequential arrangement of generic imaginary and real Gabor filters for computation reduction. Further, a novel rotational pooling mechanism that induces online feature descriptors augmentation is proposed and ….", tags:["Gabor Filters", "Rotational Pooling", "Micro Aerial Vehicle", "Autonomous Drone"], doi:"https://www.sciencedirect.com/science/article/pii/S0952197622004584", pdf:"#"},
+
+      {title:"On salient concrete crack detection via improved Yolov5", year:2021, venue:"IEEE 18th International computer conference on wavelet active media technology and information processing (ICCWAMTIP)", type:"conference", authors:"Isaac Osei Agyemang, Xiaoling Zhang, Isaac Adjei-Mensah, Bernard Cobbinah Mawuli, Bless Lord Y Agbley, Linda Delali Fiasam, Collins Sey", abstract:"Conventional visual inspection of concrete structures in Structural Health Monitoring (SHM) ascertains the health status of concrete structures but due to subjectivity and intense labor on the part of experts, the dynamics have almost shifted to automation which heavily dwells on detectors. Although object detectors accelerate the task of SHM, in concrete crack detection, some challenges include the asymmetrical shapes, hairline/salient cracks, and varying scales of cracks. To mitigate these challenges, we introduce image denoising and attention mechanisms ….", tags:["Cracks", "Object Detection", "Structural Health Monitoring", "Deep Learning"], doi:"https://ieeexplore.ieee.org/abstract/document/9674153", pdf:"#"},
+
+      {title:"Efficient 3D residual network on MRI data for neurodegenerative disease classification", year:2022, venue:"SPIE 13th International Conference on Graphics and Image Processing (ICGIP)", type:"conference", authors:"Linda Delali Fiasam, Yunbo Rao, Collins Sey, Isaac Osei Agyemang, Cobbinah Bernard Mawuli, Edwin Kwadwo Tenagyei", abstract:"In recent times, deep learning methods have been employed to learn anatomical and functional brain changes from high discriminative features extracted from neuroimaging data such as Magnetic Resonance Imaging (MRI) which can enhance the performance in the classification and early diagnosis of neurodegenerative diseases. However, features that exist between brain regions that are farther apart are usually not captured by most state-of-the-art deep learning methods. Thus, an effective and robust model for the extraction of high-dimensional descriptive features especially from brain MRI remains an open challenge. In this paper, we investigate the applicability of an enhanced 3D Residual Network (ResNet) for the extraction of high-dimensional descriptive features for an improved classification of neurodegenerative disease using MRI scans. In particular, we enhanced the ResNet-18 by using a dilated ….", tags:["Neurodegenerative Diseases", "Medical Imaging", "MRI", "Deep Learning"], doi:"https://www.spiedigitallibrary.org/conference-proceedings-of-spie/12083/120831A/Efficient-3D-residual--network-on-MRI-data-for-neurodegenerative/10.1117/12.2623238.short", pdf:"#"},
+
+      {title:"Accelerating classification on resource-constrained edge nodes towards automated structural health monitoring", year:2021, venue:"IEEE 18th International Computer Conference on Wavelet Active Media Technology and Information Processing (ICCWAMTIP)", type:"conference", authors:"Isaac Osei Agyemang, Xiaoling Zhang, Isaac Adjei-Mensah, Bless Lord Y Agbley, Linda Delali Fiasam, Bernard Cobbinah Mawuli, Collins Sey", abstract:"Resource-constrained edge nodes are ubiquitous in industrial settings yet are challenged by limited computing resources. Leveraging computational advantage and perceptual awareness of Gabor filters, a hybrid classifier to mitigate computational requirements in the context of classification of key components of civil structures which are essential in the proactive structural assessment, specific repairs, and maintenance post-construction is given. Deployment of the hybrid classifier using the CoreML framework exhibits favorable classification accuracy and robustness as compared to contemporary state-of-the-art classifiers.", tags:["Gabor Filters", "Transfer Learning", "Deep Learning", "Neural Network", "Structural Health Monitoring"], doi:"https://ieeexplore.ieee.org/abstract/document/9674071", pdf:"#"},
+
+      {title:"Accelerating trail navigation for unmanned aerial vehicle: A denoising deep-net with 3D-NLGL", year:2022, venue:"Journal of Intelligent & Fuzzy Systems", type:"journal", authors:"Isaac Osei Agyemang, Xiaoling Zhang, Isaac Adjei-Mensah, Bless Lord Y Agbley, Bernard Cobbinah Mawuli, Linda Delali Fiasam, Collins Sey", abstract:"Waypoints have enhanced the prospect of fully autonomous drone applications. However, Geographical Position System (GPS) spoofing and signal interferences are key issues in waypoint-based drone applications. Also, conceptual waypoint-based drone applications require accurate awareness of waypoints based on environmental cues and integration of additional sensing modalities. Additional sensor modalities may overwhelm drones’ processing resources, reducing operational time. This study proposes W-MobileNet, a denoising model for autonomous trajectory trail navigation ….", tags:["Navigation", "Micro Aerial Vehicle", "Deep Learning"],
+      doi:"https://journals.sagepub.com/doi/abs/10.3233/JIFS-220693", pdf:"#"},
+
+      {title:"Bridging the digital divide: Securing information and computer systems in an unequal world", year:2024, venue:"International Conference on Implications of Information and Digital Technologies for Development", type:"conference", authors:"Daniel Acheampong, Peter Meso, Isaac Osei Agyemang, Joseph Cudjoe", abstract:"The study examines security challenges modeled by the digital divide, mainly focusing on how disparities in technological access and economic conditions impact cybersecurity readiness. Key questions addressed include: Does inequality contribute to security challenges in the digital world? What factors should guide the deployment of cybersecurity measures in the Global South? We hypothesize that the cybersecurity landscape significantly varies between developed and developing regions, influenced by distinct technological and socioeconomic factors. Utilizing the Global Cybersecurity Index (GCI) as a metric, our analysis reveals how advancements in Artificial Intelligence (AI) and disparities in income and digital infrastructure critically impact the efficacy of cybersecurity measures. The findings indicate that income inequality and inadequate digital infrastructure disproportionately increase security ….", tags:["Cybersecurity ", "Artificial Intelligence", "Disparities in Technology"], doi:"https://link.springer.com/chapter/10.1007/978-3-031-66986-6_6", pdf:"#"},
+
+      {title:"SCAF-DG: a multi-site medical image denoising with a domain-generalized spatial-channel attention fusion", year:2023, venue:"IEEE 6th International Conference on Pattern Recognition and Artificial Intelligence (PRAI)", type:"conference", authors:"Linda Delali Fiasam, Yunbo Rao, Collins Sey, Benjamin Klugah-Brown, Obed Nartey Tettey, Esther Stacy EB Aggrey, Isaac Osei Agyemang, Isaac Adjei-Mensah, Yang Yang", abstract:"Images from multiple medical sites usually contain varying noise levels that can affect the generalization performance of the denoising models. Domain generalization (DG), which seeks to learn a model that can generalize to an unseen test domain, has not been extensively explored in medical image denoising for multi-site images. We present an approach for multi-site medical image denoising, which addresses the issue of varying noise levels across different imaging sites. Our proposed method, called SCAF-DG (Spatial-Channel Attention Fusion for Domain Generalization), employs two ….", tags:["Domain Generalization", "Image Denoising", "Residual Learning", "Magnetic Resonance Images"], doi:"https://ieeexplore.ieee.org/abstract/document/10332061", pdf:"#"},
+
+      {title:"Wb-Proxshare: A Warrant-Based Proxy Re-Encryption Model for Secure Data Sharing in Iot Networks Via Blockchain", year:2022, venue:"IEEE 19th International Computer Conference on Wavelet Active Media Technology and Information Processing (ICCWAMTIP)", type:"conference", authors:"Collins Sey, Hang Lei, Xiaoyu Li, Weizhong Qian, Obed Barnes, Linda Delali Fiasam, Cong Zhang, Seth Larweh Kodjiku, Isaac Osei Agyemang, Isaac Adjei-Mensah, Xiaolei Shang", abstract:"The Internet of Things (IoT) has become increasingly popular due to the enormous growth in the number of smart devices and the massive amount of data these devices generate. Data access and sharing has been one of the most valuable services of the IoT network. For this reason, the security and privacy of the data are of great essence to harnessing the full potential of the IoT network. Existing security measures for data access and sharing have proven to be insufficient. They usually need more credibility due to centralization and single-point-of-failure problems. In this paper, we propose WB-Proxshare, a data accessThe Internet of Things (IoT) has become increasingly popular due to the enormous growth in the number of smart devices and the massive amount of data these devices generate. Data access and sharing has been one of the most valuable services of the IoT network. For this reason, the security and privacy of the data are of great essence to harnessing the full potential of the IoT network. Existing security measures for data access and sharing have proven to be insufficient. They usually need more credibility due to centralization and single-point-of-failure problems. In this paper, we propose WB-Proxshare, a data access ….", tags:["Blockchain", "Internet of Things (IoT)", "Data Sharing", "Proxy Re-encryption"], doi:"https://ieeexplore.ieee.org/abstract/document/10016514", pdf:"#"},
+
+      {title:"Learning-centered multi-modal federated learning complimented with filter rotation for clinical image diagnosis", year:2025, venue:"Engineering Applications of Artificial Intelligence", type:"journal", authors:"Isaac Adjei-Mensah, Qingxian Wang, Isaac Osei Agyemang, Adu Asare Baffour, Sophyani Banaamwini Yussif, Collins Sey, Linda Delali Fiasam, Ijeoma Amuche Chikwendu, Weidong Wang", abstract:"The demand for accurate and efficient diagnostic tools in medical imaging, highlighted by the COronaVIrus Disease of 2019 (COVID-19) pandemic, has emphasized the need for robust computer-aided diagnostic systems. However, the challenge of privacy preservation in data sharing across institutions remains a hurdle. To address these, this study introduces Federated Network (FedNet), a federated learning (FL)-based framework designed to facilitate decentralized training of medical data while preserving privacy. FedNet incorporates innovative methodologies: a filter rotation technique to enhance feature extraction by capturing ….", tags:["Multi-modal Learning", "Federated Learning", "Medical Imaging", "Rotational filtering"], doi:"https://www.sciencedirect.com/science/article/pii/S0952197625018937", pdf:"#"},
+
+      {title:"Towards Fully Synthetic Training: Exploring Data Augmentations for Synthetic-to-Measured SAR in Automatic Target Recognition", year:2025, venue:"IEEE World AI IoT Congress (AIIoT)", type:"conference", authors:"Adu Asare Baffour, Isaac Osei Agyemang, Isaac Adjei-Mensah, Raphael Elimeli Nuhoho", abstract:"The scarcity of measured Synthetic Aperture Radar (SAR) images, driven by high costs and time constraints, poses a significant challenge to developing robust Automatic Target Recognition (ATR) systems. Artificially generated SAR images, unlike real measured data captured by radar systems, provide a potential alternative. However, discrepancies between these synthetic SAR images and the real-world measured SAR images hinder effective generalization. This paper introduces data augmentation techniques to train effective SAR-ATR models exclusively on synthetic SAR data, achieving high accuracy on real measured SAR data. We employ image augmentation techniques that mimic essential radar signal components, including target variations with color jitter, system characteristics with Gaussian noise, and environmental effects using random erasing. We assessed these techniques individually and in …", tags:["Synthetic Aperture Radar", "Automatic Target Recognition", "Data Augmentation", "Deep Learning"], doi:"https://ieeexplore.ieee.org/abstract/document/11105313", pdf:"#"},
+
+      {title:"Drivers Of Utility Viability And Sustainability: Do Nonfinancial Performance Measures Make A Difference?", year:2023, venue:"GLOBAL CONFERENCE ON BUSINESS AND FINANCE PROCEEDINGS", type:"conference", authors:"Isaac Osei Agyemang, Daniel Acheampong, Chrissann Ruehle, Tanya S Benford", abstract:"The study reviews the growth trend for investor-owned utilities (water and wastewater), adopts the National Regulatory Research Institute's financial viability ratios modified by Acheampong et al., and identifies four categories of nonfinancial performance instruments that drive utility abandonments and transfers. The study observed a downtrend of investor-owned utilities from the sample state (Florida). Prior research has concentrated on financial performance measures (Financial ratios) to determine the sustainability and viability of investor-owned utilities. The study concluded that nonfinancial performance measures are significant in determining ….", tags:["Financial Performance Measures", "Nonfinancial Performance Measures", "Sustainability", "Viability", "Investor-Owned", "Authorized Territory"], doi:"https://www.theibfr.com/wp-content/uploads/2022/12/ISSN-1941-9589-V18-N1-2023.pdf#page=139", pdf:"#"},
+
+      {title:"Higher Education Funding and Graduation Rates: Should The Federal Government Increase Funding?", year:2023, venue:"GLOBAL CONFERENCE ON BUSINESS AND FINANCE PROCEEDINGS", type:"conference", authors:"Brady Durkin, Shelby Kent, Isaac Osei Agyemang, Daniel Acheampong, Tanya S Benford, Madison Diaz Granados", abstract:"This study focused on funding availability to higher education and allocating resources to rebuild the workforce by focusing on higher education graduation rates. The study used data from four-year higher education institutes in the US, grouped at the state level. 6,123 higher educational institutes' data average at the state level was used to analyze the impact of funding and student housing costs on undergraduate graduation rates. Three categories of graduation rates (four, six, and eight-year) were analyzed, first focusing on the Pell grant and other funding sources. Employing a regression modeling with a VIF of 10, the Pell grant and Other federal grants ….", tags:["Federal Funding", "Graduation Rates", "Higher Education", "State Funding", "Grants", "IPEDS"], doi:"", pdf:"https://www.theibfr.com/wp-content/uploads/2022/12/ISSN-1941-9589-V18-N1-2023.pdf#page=139"},
+
+      {title:"Auditor ratification, stock prices, and auditor change: a comparative study in publicly traded companies", year:2023, venue:"GLOBAL CONFERENCE ON BUSINESS AND FINANCE PROCEEDINGS", type:"conference", authors:"Daniel Acheampong, Isaac Osei Agyemang, Tanya S Benford, Judy Wynekoop", abstract:"This study investigates the complicated relationships among auditor ratification, stock prices, and auditor change within publicly traded companies. We analyzed 44,398 observations spanning 2010 to 2023. We find that factors influencing auditor ratification include total shares outstanding, net income, audit benefits fees, and Russell 2000 index membership. Factors that affect stock prices include the total number of votes cast by shareholders, book value, and audit fees. This study also reveals that ratification year and audit benefits fees are related to auditor change. This study adds ….", tags:["Stock Prices", "Audit", "Ractiication"], doi:"https://www.theibfr.com/wp-content/uploads/2022/12/ISSN-1941-9589-V18-N1-2023.pdf#page=139", pdf:"#"},
+
+    ];
+
+    // ---------- RENDERING + FILTERING ----------
+    const pageSize = 6;
+    let state = { q: "", filter:"all", yr:"", page:1 };
+
+    const $ = (sel)=>document.querySelector(sel);
+    const $$ = (sel)=>Array.from(document.querySelectorAll(sel));
+    const pubList = $("#pubList");
+    const showFrom = $("#showFrom"), showTo = $("#showTo"), showTotal = $("#showTotal"), pageInfo=$("#pageInfo");
+
+    function norm(s){ return (s||"").toString().toLowerCase(); }
+    function yearInRange(y, range){
+      if(!range) return true;
+      if(range==="older") return y < 2020;
+      const [hi,lo] = range.split("-").map(Number);
+      return y<=hi && y>=lo;
+    }
+
+    function render(){
+      // Filter
+      let data = publications.filter(p=>{
+        const hit = norm(p.title).includes(state.q) || norm(p.authors).includes(state.q) || norm(p.venue).includes(state.q) || (p.year+"").includes(state.q);
+        const typeOk = state.filter==="all" ? true : p.type===state.filter;
+        const yearOk = yearInRange(p.year, state.yr);
+        return hit && typeOk && yearOk;
+      }).sort((a,b)=>b.year - a.year || a.title.localeCompare(b.title));
+
+      // Pagination
+      const total = data.length;
+      const pages = Math.max(1, Math.ceil(total / pageSize));
+      state.page = Math.min(state.page, pages);
+      const start = (state.page-1)*pageSize;
+      const end = Math.min(start+pageSize, total);
+      const pageData = data.slice(start, end);
+
+      // Render cards
+      pubList.innerHTML = pageData.map(renderCard).join("");
+      showFrom.textContent = total===0 ? 0 : start+1;
+      showTo.textContent = end;
+      showTotal.textContent = total;
+      pageInfo.textContent = `Page ${state.page} of ${pages}`;
+      feather.replace();
+      AOS.refresh();
+    }
+
+    function renderCard(p){
+      const border = p.type==="journal" ? "border-green-500" : p.type==="conference" ? "border-blue-500" : "border-emerald-500";
+      const tagChips = (p.tags||[]).map(t=>`<span class="px-3 py-1 rounded-full text-xs font-medium bg-gray-100 text-gray-700 dark:bg-gray-800 dark:text-gray-100">${t}</span>`).join(" ");
+      const typeChip = `<span class="px-3 py-1 rounded-full text-xs font-medium ${p.type==='journal'?'bg-green-100 text-green-800':p.type==='conference'?'bg-blue-100 text-blue-800':'bg-emerald-100 text-emerald-800'}">${(p.type||'').charAt(0).toUpperCase()+p.type.slice(1)}</span>`;
+      const venueColor = p.type==='journal'?'text-green-600':p.type==='conference'?'text-blue-600':'text-emerald-600';
+      return `
+        <div class="publication-card bg-white dark:bg-gray-900 p-6 rounded-lg shadow-md transition duration-300 border-l-4 ${border}" data-aos="fade-up">
+          <div class="flex flex-col md:flex-row md:items-start md:justify-between">
+            <div class="flex-1">
+              <h3 class="text-xl font-semibold text-gray-900 dark:text-white">${p.title}</h3>
+              <p class="mt-1 ${venueColor}">${p.venue}${p.year?`, ${p.year}`:''}</p>
+              ${p.authors?`<p class="mt-2 text-gray-600 dark:text-gray-300 text-justify leading-relaxed">${p.authors}</p>`:''}
+              ${p.abstract?`<p class="mt-3 text-gray-700 dark:text-gray-300 text-justify leading-relaxed">${p.abstract}</p>`:''}
+              <div class="mt-4 flex flex-wrap gap-3">
+                ${typeChip}
+                ${tagChips}
+              </div>
+            </div>
+            <div class="mt-4 md:mt-0 md:ml-6 flex space-x-3">
+              ${p.pdf?`<a href="${p.pdf}" class="inline-flex items-center px-3 py-1 border border-gray-300 dark:border-gray-700 shadow-sm text-sm font-medium rounded-md text-gray-700 dark:text-gray-200 bg-white dark:bg-gray-900 hover:bg-gray-50 dark:hover:bg-gray-800"><i data-feather="file-text" class="mr-1 h-4 w-4"></i> PDF</a>`:''}
+              ${p.doi?`<a href="${p.doi}" class="inline-flex items-center px-3 py-1 border border-transparent text-sm font-medium rounded-md text-white bg-green-600 hover:bg-green-700"><i data-feather="external-link" class="mr-1 h-4 w-4"></i> DOI</a>`:''}
+            </div>
+          </div>
+        </div>`;
+    }
+
+    // ---------- IMPORTERS ----------
+    $("#importJsonBtn").addEventListener("click", ()=> $("#fileJson").click());
+    $("#fileJson").addEventListener("change", async (e)=>{
+      const file = e.target.files[0]; if(!file) return;
+      const text = await file.text();
+      try {
+        const data = JSON.parse(text);
+        if(Array.isArray(data)){
+          publications = data.concat(publications);
+          state.page = 1;
+          render();
+        } else {
+          alert("JSON must be an array of publication objects.");
+        }
+      } catch(err){ alert("Invalid JSON: " + err.message); }
+      e.target.value = "";
+    });
+
+    $("#importBibBtn").addEventListener("click", ()=> $("#fileBib").click());
+    $("#fileBib").addEventListener("change", async (e)=>{
+      const file = e.target.files[0]; if(!file) return;
+      const text = await file.text();
+      const parsed = parseBibTeX(text);
+      if(parsed.length){
+        publications = parsed.concat(publications);
+        state.page = 1;
+        render();
+      } else {
+        alert("No entries found in BibTeX.");
+      }
+      e.target.value = "";
+    });
+
+    function parseBibTeX(bib){
+      const entries = [];
+      const blocks = bib.split(/@/g).slice(1);
+      for(const block of blocks){
+        const typeMatch = block.match(/^(\w+)\s*{/);
+        if(!typeMatch) continue;
+        const typeRaw = typeMatch[1].toLowerCase();
+        const body = block.slice(block.indexOf("{")+1);
+        const fieldText = body.replace(/^\s*[^,]+,\s*/,"").replace(/}\s*$/,"");
+        const get = (key)=>{
+          const m = fieldText.match(new RegExp(key+"\\s*=\\s*[{\"](.*?)[}\"]\\s*,","is"));
+          return m? m[1].replace(/\s+/g," ").trim() : "";
+        };
+        const title = get("title");
+        const author = get("author").replace(/ and /gi, "; ");
+        const year = parseInt(get("year")) || "";
+        const journal = get("journal");
+        const booktitle = get("booktitle");
+        const doi = get("doi");
+        const url = get("url");
+        const abst = get("abstract");
+        const venue = journal || booktitle || get("publisher") || "";
+        let type = "journal";
+        if(typeRaw.includes("inproceedings") || typeRaw.includes("conference")) type = "conference";
+        else if(typeRaw.includes("book") || typeRaw.includes("inbook") || typeRaw.includes("collection")) type = "book";
+        entries.push({ title, year: year||null, venue, type, authors: author, abstract: abst, doi: doi||url||"", pdf: "" });
+      }
+      return entries;
+    }
+
+    // ---------- EVENTS ----------
+    $("#q").addEventListener("input", (e)=>{ state.q = e.target.value.toLowerCase(); state.page=1; render(); });
+    $("#clearBtn").addEventListener("click", ()=>{ $("#q").value=""; state.q=""; state.page=1; render(); });
+    $$(".chip").forEach(btn=> btn.addEventListener("click", ()=>{
+      $$(".chip").forEach(b=> b.className="chip px-3 py-2 bg-gray-100 dark:bg-gray-800 dark:text-gray-100");
+      btn.className = "chip px-3 py-2 bg-green-100 text-green-700";
+      state.filter = btn.getAttribute("data-filter");
+      state.page=1; render();
+    }));
+    $("#yearRange").addEventListener("change", (e)=>{ state.yr = e.target.value; state.page=1; render(); });
+    $("#prevPage").addEventListener("click", ()=>{ if(state.page>1){ state.page--; render(); } });
+    $("#nextPage").addEventListener("click", ()=>{ state.page++; render(); });
+
+    // Mobile menu
+    document.querySelector('.mobile-menu-button').addEventListener('click', function() {
+      document.querySelector('.mobile-menu').classList.toggle('hidden');
+    });
+
+    document.addEventListener('DOMContentLoaded', function(){
+      AOS.init({ duration: 800, easing: 'ease-in-out', once: true });
+      feather.replace();
+      render();
+    });
+  </script>
+  <!-- Back to Top Button -->
+<button id="backToTop"
+        class="hidden fixed bottom-8 right-8 bg-green-600 text-white p-3 rounded-full shadow-lg hover:bg-green-700 transition-opacity duration-300 dark:bg-green-500 dark:hover:bg-green-400"
+        aria-label="Back to top">
+  <i data-feather="arrow-up"></i>
+</button>
+
+<script>
+  // Show button after scrolling down 300px
+  const backToTopBtn = document.getElementById("backToTop");
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 300) {
+      backToTopBtn.classList.remove("hidden");
+      backToTopBtn.classList.add("flex");
+    } else {
+      backToTopBtn.classList.add("hidden");
+    }
+  });
+
+  // Scroll smoothly to top when clicked
+  backToTopBtn.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+</script>
+</body>
+</html>
